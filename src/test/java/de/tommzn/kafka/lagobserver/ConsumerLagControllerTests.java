@@ -3,6 +3,7 @@ package de.tommzn.kafka.lagobserver;
 import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.awaitility.Awaitility.await;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import de.tommzn.kafka.lagobserver.model.*;
 import de.tommzn.kafka.lagobserver.simulation.*;
 import java.time.Instant;

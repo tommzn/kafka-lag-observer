@@ -3,6 +3,7 @@ package de.tommzn.kafka.lagobserver;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
+
 import de.tommzn.kafka.lagobserver.adapter.KafkaClientMock;
 import de.tommzn.kafka.lagobserver.adapter.LagObserver;
 import de.tommzn.kafka.lagobserver.service.*;

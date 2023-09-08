@@ -1,15 +1,16 @@
 package de.tommzn.kafka.lagobserver.adapter;
 
+import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.awaitility.Awaitility.await;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
+
 import de.tommzn.kafka.lagobserver.model.*;
 import de.tommzn.kafka.lagobserver.simulation.*;
 import java.time.Instant;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import static java.util.concurrent.TimeUnit.SECONDS;
 import java.util.Map;
 import java.util.Set;
 import org.apache.kafka.common.TopicPartition;

@@ -1,8 +1,7 @@
 package de.tommzn.kafka.lagobserver.model;
 
-import java.util.List;
-import lombok.Data;
 import lombok.AllArgsConstructor;
+import lombok.Data;
 
 @Data
 @AllArgsConstructor

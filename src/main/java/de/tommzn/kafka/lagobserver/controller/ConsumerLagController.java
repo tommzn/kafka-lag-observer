@@ -1,21 +1,16 @@
 package de.tommzn.kafka.lagobserver.controller;
 
+import de.tommzn.kafka.lagobserver.model.ConsumerLag;
+import de.tommzn.kafka.lagobserver.model.ConsumerLagRecord;
+import de.tommzn.kafka.lagobserver.persistence.ConsumerLagRepository;
+import de.tommzn.kafka.lagobserver.service.LagAnalyzerService;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ExecutionException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.apache.kafka.common.TopicPartition;
-
-import java.util.List;
-import java.lang.Iterable;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.concurrent.ExecutionException;
-
-import de.tommzn.kafka.lagobserver.model.ConsumerLag;
-import de.tommzn.kafka.lagobserver.model.ConsumerLagRecord;
-import de.tommzn.kafka.lagobserver.service.LagAnalyzerService;
-import de.tommzn.kafka.lagobserver.persistence.ConsumerLagRepository;
 
 @RestController
 public class ConsumerLagController {

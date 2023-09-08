@@ -1,10 +1,10 @@
 package de.tommzn.kafka.lagobserver.model;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Entity

@@ -1,11 +1,10 @@
 package de.tommzn.kafka.lagobserver.adapter;
 
-import org.apache.kafka.common.TopicPartition;
-
-import java.util.Set;
-import java.util.Map;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ExecutionException;
+import org.apache.kafka.common.TopicPartition;
 
 public interface LagObserver {
     

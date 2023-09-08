@@ -1,0 +1,18 @@
+version: 2.1
+
+jobs:
+  run-gradle-tests:
+    docker:
+      - image: cimg/openjdk:17.0.8-node
+    
+    steps:
+      - checkout
+      - setup_remote_docker:
+          docker_layer_caching: true
+          version: 20.10.12
+      - run: gradle test
+
+workflows:
+  tests:
+    jobs:
+      - run-gradle-tests

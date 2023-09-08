@@ -1,0 +1,15 @@
+version: "2"
+
+services:
+  lag-observer:
+    image: lag-observer:latest
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_KAFKA_BOOTSTRAP_SERVERS=kafka:29092
+    networks: 
+      - kafka_default
+      
+networks:
+  kafka_default:
+    external: true

@@ -1,7 +1,10 @@
 name: Format Sources
 
-on: [ push, pull_request ]
-
+on:
+  push:
+    branches:    
+      - 'features/*'
+      
 jobs:
 
   formatting:
@@ -11,4 +14,3 @@ jobs:
       - uses: axel-op/googlejavaformat-action@v3
         with:
           args: "--skip-sorting-imports --replace"
-          github-token: ${{ secrets.CR_PAT }}

@@ -1,12 +1,9 @@
 package de.tommzn.kafka.lagobserver.simulation;
 
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.kafka.annotation.KafkaListener;
-
 import java.util.ArrayList;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.kafka.annotation.KafkaListener;
 
 public class ConsumerSimulator {
     

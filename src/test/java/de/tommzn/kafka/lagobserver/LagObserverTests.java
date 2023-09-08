@@ -1,31 +1,24 @@
 package de.tommzn.kafka.lagobserver;
 
-import de.tommzn.kafka.lagobserver.service.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.fail;
 import de.tommzn.kafka.lagobserver.adapter.KafkaClientMock;
 import de.tommzn.kafka.lagobserver.adapter.LagObserver;
-
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.context.TestConfiguration;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Bean;
-import org.springframework.beans.factory.annotation.Value;
-import org.apache.kafka.common.TopicPartition;
-import org.springframework.test.context.ActiveProfiles;
-
+import de.tommzn.kafka.lagobserver.service.*;
 import java.util.HashMap;
 import java.util.Map;
-import java.time.Instant;
-
-import static java.util.concurrent.TimeUnit.SECONDS;
-import static org.awaitility.Awaitility.await;
-
+import org.apache.kafka.common.TopicPartition;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.boot.test.context.TestConfiguration;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Primary;
+import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
 @ActiveProfiles(value = "test")

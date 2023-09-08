@@ -1,18 +1,13 @@
 package de.tommzn.kafka.lagobserver.adapter;
 
-import org.springframework.stereotype.Component;
-import org.springframework.beans.factory.annotation.Value;
-
-import org.apache.kafka.common.TopicPartition;
-
-import java.util.Set;
-import java.util.Map;
-import java.util.List;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.ExecutionException;
+import org.apache.kafka.common.TopicPartition;
+import org.springframework.beans.factory.annotation.Value;
 
 public class KafkaClientMock  implements LagObserver {
     

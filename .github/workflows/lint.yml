@@ -14,3 +14,5 @@ jobs:
           skip-commit: true
       - name: Print diffs
         run: git --no-pager diff --exit-code
+      - run: java --version
+      - run: gradle --version
